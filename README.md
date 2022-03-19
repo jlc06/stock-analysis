@@ -11,3 +11,6 @@
 
 - After running our macro, the stock performance for 2017 was as follows:
 
+![2017_Stocks](2017_Stocks.png)
+
+![2018_Stocks](2018_Stocks.png)
