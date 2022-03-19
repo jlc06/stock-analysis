@@ -21,7 +21,17 @@ Before iterating through once again with the next stock in the array, I added th
 
 ![Output](Output.png)
 
+The run times for this initial macro were as follows:
+
+
+
 In an effort to streamline my code, I refactored it to try and cut time off of the analysis by only initating through the data once instead of twelve times. To do so, I created a tickerIndex variable that could house the index of each ticker that could then be increased when a row changed to a new ticker symbol. By refactoring the code in this way, I was able to go through all the data in a fifth of the time.
+
+### 2017
+![2017](VBA_Challenge_2017.png)
+
+### 2018
+![2018](VBA_Challenge_2018.png)
 
 After running our new refactored macro, the stock performance for 2017 was as follows:
 
