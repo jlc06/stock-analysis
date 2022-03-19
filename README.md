@@ -13,7 +13,7 @@ To begin my analysis, I was presented with over 3,000 rows of data in two separa
 
 ![Tickers](Tickers.png)
 
-To go through all the data and calculate the volume and starting/ending prices for each stock, I first archived the number of rows in a RowCount variable using the following code: RowCount = Cells(Rows.Count,"A").End(xlUp).Row. Next, I used a nested for loop to sift through every row, obtaining the total volume, startin price, and ending price for every stock:
+To go through all the data and calculate the volume and starting/ending prices for each stock, I first archived the number of rows in a RowCount variable using the following code: RowCount = Cells(Rows.Count,"A").End(xlUp).Row. Next, I used a nested for loop to sift through every row, obtaining the total volume, starting price, and ending price for every stock:
 
 ![ForLoop](ForLoop.png)
 
@@ -29,7 +29,7 @@ The run times for this initial macro were as follows:
 ### 2018
 ![2018_first](2018_First.png)
 
-In an effort to streamline my code, I refactored it to try and cut time off of the analysis by only initating through the data once instead of twelve times. To do so, I created a tickerIndex variable that could house the index of each ticker that could then be increased when a row changed to a new ticker symbol. By refactoring the code in this way, I was able to go through all the data in a fifth of the time.
+In an effort to streamline my code, I refactored it to try and cut time off of the analysis by only iterating through the data once instead of twelve times. To do so, I created a tickerIndex variable that could house the index of each ticker that could then be increased when a row changed to a new ticker symbol. By refactoring the code in this way, I was able to go through all the data in a fifth of the time.
 
 ### 2017
 ![2017](VBA_Challenge_2017.png)
@@ -49,6 +49,6 @@ Every stock other than "ENPH" and "RUN" decreased in value by years end, while "
 
 ### Summary
 
-Refactoring code has a number of advantages and disadvantages. One advantage is cutting the time needed to run a piece of code, expediting an analysis and removing redundencies. One disadvantage is the time needed on the front end to ensure our shortened code runs the same, being especially careful in tracking our variables and any syntax errors. 
+Refactoring code has a number of advantages and disadvantages. One advantage is cutting the time needed to run a piece of code, expediting an analysis and removing redundancies. One disadvantage is the time needed on the front end to ensure our shortened code runs the same, being especially careful in tracking our variables and any syntax errors. 
 
-In terms of how these pros and cons apply to our analyasis, as mentioned above we were able to analyze the stock data in a fifth of the time it took us to do it with our nested for statements. However, there was occasional trial and error when getting the code to produce the same output given more variables to keep track of and syntax challenges that needed to be taken into consideration. 
+In terms of how these pros and cons apply to our analysis, as mentioned above we were able to analyze the stock data in a fifth of the time it took us to do it with our nested for statements. However, there was occasional trial and error when getting the code to produce the same output given more variables to keep track of and syntax challenges that needed to be taken into consideration. 
