@@ -11,15 +11,15 @@
 
 To begin my analysis, I was presented with over 3,000 rows of data in two separate sheets: one for 2017 data and the other for 2018 data. In my initial macro I created, I used nested for loops to iterate through all the rows of data 12 times, correlating with the number of different stocks Steve and I were tracking. I created an array to house the individual stock tickers for all 12 stocks, as well as two variables to house the individual starting and ending prices for each stock:
 
-photo
+![Tickers](Tickers.png)
 
 To go through all the data and calculate the volume and starting/ending prices for each stock, I first archived the number of rows in a RowCount variable using the following code: RowCount = Cells(Rows.Count,"A").End(xlUp).Row. Next, I used a nested for loop to sift through every row, obtaining the total volume, startin price, and ending price for every stock:
 
-photo
+![ForLoop](ForLoop.png)
 
 Before iterating through once again with the next stock in the array, I added the values for the current stock into our "All Stocks Analysis" sheet using the following code:
 
-photo
+![Output](Output.png)
 
 In an effort to streamline my code, I refactored it to try and cut time off of the analysis by only initating through the data once instead of twelve times. To do so, I created a tickerIndex variable that could house the index of each ticker that could then be increased when a row changed to a new ticker symbol. By refactoring the code in this way, I was able to go through all the data in a fifth of the time.
 
